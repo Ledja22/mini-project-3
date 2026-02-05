@@ -13,6 +13,10 @@
 **Source & Size:** Marketing campaign dataset containing 2,240 customer records with 29 features  
 **After Preprocessing:** 1,999 customers (outliers removed, features selected)
 
+## Dataset source 
+
+ https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis
+
 **Key Features:**
 - **Demographics:** Year_Birth, Education, Marital_Status, Income, Kids at home, Teens at home
 - **Spending:** MntWines, MntMeatProducts, MntFishProducts, MntSweetProducts, MntGoldProds
@@ -29,6 +33,7 @@
 ---
 
 ## Setup Instructions
+
 
 ### Install Dependencies
 ```bash
@@ -102,10 +107,10 @@ This suggests anomalies are not noise, but extremely high-value customer behavio
 **Developers:** Ledja Halltari, Henry Chen
 
 **Tasks done in this project:**
-- Data preprocessing and outlier removal analysis (contamination experiments: 0.03, 0.05, 0.10)
-- Feature selection using variance analysis
-- Clustering implementation (K-means and Spectral Clustering)
-- Anomaly characterization and categorization
-- PCA and t-SNE visualizations
-- Business label creation for clusters
-- Full notebook development and documentation
+- Data preprocessing and outlier removal analysis (contamination experiments: 0.03, 0.05, 0.10) - Ledja Halltari
+- Feature selection using variance analysis - Henry Chen
+- Clustering implementation (K-means and Spectral Clustering) - Ledja Halltari
+- Anomaly characterization and categorization - Henry Chen
+- PCA and t-SNE visualizations - Ledja Halltari
+- Business label creation for clusters - Henry Chen
+- Full notebook development and documentation - Ledja Halltari && Henry Chen
