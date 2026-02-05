@@ -97,9 +97,6 @@ This suggests anomalies are not noise, but extremely high-value customer behavio
 
 ---
 
-### Optimal K Selection
-TO DO FOR LATER DO NOT FORGET
-
 ## Team Contributions
 
 **Developers:** Ledja Halltari, Henry Chen
