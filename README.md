@@ -56,6 +56,48 @@ Execute cells in order from top to bottom. Key sections:
 ## Results Summary
 
 ### Optimal K Selection
+K was evaluated from 1 to 10 using both the elbow method and silhouette score.  
+Both methods indicated that **K = 2** was the most stable and interpretable choice, with a peak silhouette score of **0.234**. While moderate, this level of separation is realistic for overlapping marketing behavior data.
+
+### Customer Segments Identified
+
+Two meaningful customer segments emerged:
+
+**1. Premium High-Value Customers (60.1%)**
+- Higher average income (~$63,882 vs $34,748)
+- Significantly higher spending across all product categories
+- 25% campaign response rate
+- More catalog and store purchases
+- Represent the primary revenue-driving group
+
+**2. Low-Engagement Budget Customers (39.9%)**
+- Lower income
+- Minimal spending
+- 0% campaign response rate
+- Higher browsing activity but fewer purchases
+- More price-sensitive and less engaged overall
+
+### Dimensionality Reduction Insights
+PCA showed separation primarily along the first principal component, largely influenced by income and spending variables.  
+t-SNE visualizations showed even clearer grouping, suggesting some non-linear structure in customer behavior.
+
+### Anomaly Detection Insights
+Using Isolation Forest with 5% contamination:
+
+- 106 customers were flagged as anomalous
+- Anomalies showed:
+  - 417% higher campaign response rates
+  - 255% higher sweet product spending
+  - 239% higher meat spending
+  - 51% higher income
+- 9.2% of Premium customers were labeled anomalous
+- Only 0.2% of Budget customers were anomalous
+
+This suggests anomalies are not noise, but extremely high-value customer behaviors that may represent VIP-level segments.
+
+---
+
+### Optimal K Selection
 TO DO FOR LATER DO NOT FORGET
 
 ## Team Contributions
